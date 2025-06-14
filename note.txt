@@ -1,0 +1,10 @@
+ using image from public folder 
+
+ *** I have to use the full public path
+ =======================================
+ <img src='http://localhost:3000/image.jpeg'></img> 
+
+
+*** i can aslo use relative path
+================================
+ <img src='/image.jpeg'></img> 
