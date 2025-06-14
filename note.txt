@@ -8,3 +8,7 @@
 *** i can aslo use relative path
 ================================
  <img src='/image.jpeg'></img> 
+
+why do we need to use state
+=============================
+*** we use state to rerender our component 
