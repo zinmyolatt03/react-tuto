@@ -19,16 +19,29 @@ function App() {
                           },
                         ]);
 
+  const deletePost = ( id ) => {
+    setPosts( (prevState) => prevState.filter( post => post.id !== id ))
+  }
+
   return (
     <>
       <Navbar />
       <div>
           <h2> posts </h2>
+
           <ul> 
-              { posts.map( post => (
-                <li key={post.id}> { post.title } </li>
-              ))}
+              { posts && posts.map( post => (
+                <div key={post.id}>
+                    <li> { post.title } 
+                      <button onClick={() => deletePost(post.id)}> delete </button> 
+                    </li>
+                </div>
+              )) }
           </ul>
+
+          { !posts.length && 
+          <p> no posts avaiable here </p>
+          }
       </div>
     </>
   );
