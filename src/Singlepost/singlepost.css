@@ -1,8 +1,8 @@
-.single-post {
+.single-post{
   background: #ffffff;
-  border: 1px solid #e5e7eb;
   border-radius: 8px;
   padding: 1.5rem;
+  border: 1px solid #00000092;
   font-size: 1.125rem;
   font-weight: 500;
   margin: 60px 100px 0px 100px;
@@ -10,6 +10,14 @@
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.post-list .border-red{
+  border: 1px solid red;
+}
+
+.post-list .border-blue{
+  border: 1px solid green;
 }
 
 .single-post:hover {
