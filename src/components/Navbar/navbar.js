@@ -1,7 +1,11 @@
 import React from 'react'
 import "./navbar.css"
 
-export default function Navbar() {
+export default function Navbar( { setShowModal }) {
+
+  const showModal = () => {
+    setShowModal( true )
+  }
   return (
     <div className="navbar-container">
       <nav className="navbar">
@@ -18,6 +22,9 @@ export default function Navbar() {
             </a>
           </li>
         </ul>
+        <button className="create-post-btn" onClick={showModal}>
+          Create Post
+        </button>
       </nav>
     </div>
   )
