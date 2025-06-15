@@ -1,8 +1,10 @@
 import React from 'react'
 import './singlepost.css';
+import styles from './singlepost.module.css';
 
-export default function Singlepost({ post }) {
+export default function Singlepost({ post, danger = false }) {
+  let new_class = danger ? "border-red" : "border-blue";
   return (
-    <div className='single-post'> { post.title} </div>
+    <div className  ={`single-post ${new_class} ${styles.card}`}> { post.title} </div>
   )
 }
