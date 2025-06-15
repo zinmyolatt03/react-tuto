@@ -28,10 +28,6 @@ function App() {
     setPosts( (prevState) => [ ...posts,  post ]);
   }
 
-  const addPost = ( post ) => {
-    setPosts( (prevState) => [ ...posts, post]);
-  }
-
   return (
     <>
       <Navbar setShowModal={setShowModal}/>
