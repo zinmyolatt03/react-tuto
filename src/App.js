@@ -17,10 +17,12 @@ function App() {
                           {
                             id : 1, 
                             title : 'post one',
+                            status : 'ongoing',
                           },
                           {
                             id : 2, 
                             title : 'post two',
+                            status : "dropped",
                           },
                         ]);
 
